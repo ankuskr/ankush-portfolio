@@ -170,4 +170,11 @@ const workObserver = new IntersectionObserver(
   }
 );
 
+document.getElementById('scrollTopButton').addEventListener('click', function () {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
 workObserver.observe(workSection);
